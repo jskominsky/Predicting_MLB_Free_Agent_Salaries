@@ -74,3 +74,20 @@ My final model was a Random Forest gridsearch.  This model is able to account fo
 2. Detrend the salary data so the yearID isn't the most important feature and the players' statistics were more important.
 3. Include data on players' service time so I can more accurately predict when a player is going to free agency.
 4. Find reliable fielding data so I can include a players' fielding statistics.
+
+## For More Information
+
+Please review my full analysis available in my [Jupyter Notebook](PrimeTime_Main.ipynb) or [Presentation Deck](fakelink).
+
+For additional questions, feel free to [contact me](mailto:jskominsky@gmail.com).
+
+## Repository Structure
+
+```
+├── data                                <- Source data .csv files
+├── images                              <- Exported Notebook visualizations
+├── Workspace                           <- Additional scratch work notebooks
+├── Data Cleaning.ipynb                 <- Data Cleaning and EDA in Jupyter Notebook
+├── Modeling.ipynb                      <- Preprocessing and Modeling in Jupyter Notebook
+├── MLB_FA_presentation.pdf             <- PDF version of project presentation
+└── README                              <- Top-level README for reviewers of this project
