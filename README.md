@@ -77,7 +77,7 @@ My final model was a Random Forest gridsearch.  This model is able to account fo
 
 ## For More Information
 
-Please review my Notebooks, [Data Cleaning](Data Cleaning.ipynb), [Modeling](Modeling.ipynb) or [Presentation Deck](MLB_FA_presentation.pdf).
+Please review my Notebooks, [Data Cleaning](Data_Cleaning.ipynb), [Modeling](Modeling.ipynb), or [Presentation Deck](MLB_FA_presentation.pdf).
 
 For additional questions, feel free to [contact me](mailto:jskominsky@gmail.com).
 
@@ -87,7 +87,7 @@ For additional questions, feel free to [contact me](mailto:jskominsky@gmail.com)
 ├── data                                <- Source data .csv files
 ├── images                              <- Exported Notebook visualizations
 ├── Workspace                           <- Additional scratch work notebooks
-├── Data Cleaning.ipynb                 <- Data Cleaning and EDA in Jupyter Notebook
+├── Data_Cleaning.ipynb                 <- Data Cleaning and EDA in Jupyter Notebook
 ├── Modeling.ipynb                      <- Preprocessing and Modeling in Jupyter Notebook
 ├── MLB_FA_presentation.pdf             <- PDF version of project presentation
 └── README                              <- Top-level README for reviewers of this project
