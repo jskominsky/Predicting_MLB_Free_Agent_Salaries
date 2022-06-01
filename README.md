@@ -11,7 +11,7 @@
 [GitHub](https://github.com/jskominsky) | 
 [Email](mailto:jskominsky@gmail.com)
 
-### Business Understanding
+## Business Understanding
 ---
 
 Every year in Major League Baseball (MLB), hundreds of players become free agents.  During this time, their agents are consistently meeting with both their clients (players) and the general managers who they are negotiating these contracts with.  Sometimes, players can avoid free agency altogether by signing a contract extension with their current team prior to their contract expiring.  
@@ -20,7 +20,7 @@ Over the past few years, there have been situations where players have too high 
 
 Agents not having realistic expectations and not understanding what their clients will be offered by general managers, puts them at a competitive disadvantage.  It can make their clients upset, and can lead to being fired, when the players don't receive the contract offers they were told by their agent to expect.  It also puts agents at a competitive disadvantage in negotiations with general managers.
 
-### Overview
+## Overview
 ---
 
 I was hired by the Boras Corporation to create a predictive model to better predict MLB free agent hitters salaries.  After these major blunders with Michael Conforto and Mike Moustakas's contracts, the Boras Corparation has realized that they need to be able to better predict free agent salaries so they can tell their clients what to expect, and to give them a leg up in negotiations with MLB general managers.
@@ -33,7 +33,7 @@ In order to address the problem that the Boras Corporation is facing, I will use
 
 I chose to use these models because they all can handle multicollinearity and have the ability to tell me feature importance.  Feature importance is important because the agents can tell their clients what part of their game to improve during the offseason to give them the best chance at a bigger contract. 
 
-### Data Understanding
+## Data Understanding
 ---
 
 My original dataset was found at [Kaggle.com](https://www.kaggle.com/datasets/open-source-sports/baseball-databank).  The dataset contained 20 CSV files that included MLB data from 1871-2021. Of those 20 CSV's I used the following: 
@@ -49,25 +49,25 @@ While the batting.csv statistics went through 2021, the salaries only went throu
 
 I subsetted my data to only use data from 1984-2021.  I also subsetted my data to only include players who played at least 6 seasons (so the only players included were ones who played long enough to make it to free agency).  I then made a new dataframe where the columns of the dataframe were the players' hitting statistics for each of his first 6 seasons, and included the players' average salary of his 7th, 8th, 9th, and 10th seasons (or less if he didn't play 10 seasons). This created a dataframe that was 1063 rows (one for each player in my dataset that played 6 or more seasons) by 131 columns.  The columns included the players' hitting statistics for his first 6 seasons, along with whether he made the All Star Game, whether he started the All Star Game, whether he won an award, or got votes for MVP or Rookie of the Year,  whether his team made the playoffs, and if his team won the World Series.
 
-### Methods
+## Methods
 ---
 
-### Results
+## Results
 ---
 
-### Conclusion
+## Conclusion
 ---
 
 My final model was a Random Forest gridsearch.  This model is able to account for nearly 70% of the variance within my data.  My final model has an RMSE of 3,063,911, which means the error of our predictions is just over $3 million.  This seems like a fair amount of error to expect when agents and general managers are negotiating a contract. However, I believe that once I am able to detrend the salary data, my model will have an even lower mean squared error.  This is important because the average salary in MLB has gone from \\$371,571 in 1985 to \\$4,414,184 in 2022, according to [Baseball Reference](https://www.baseball-reference.com/bullpen/Minimum_salary). By using regression models to help predict MLB free agent salaries, I have given The Boras Corporation a competitive advantage when dealing with clients and when negotiating new contracts with General Managers.  
 
-### Limitations
+## Limitations
 ---
 
 1. The fielding data that was included was very incomplete and did not include any of the truly relevant fielding statistics.
 2. The original salary data was pretty incomplete, and without the data set purchased from [The Baseball Cube](https://www.thebaseballcube.com/content/store/) it would have been very difficult to succesfully complete this model, because I would not have had enough data.
 
 
-### Next Steps
+## Next Steps
 ---
 
 1. Find a way to account for the 2020 Pandemic Shortened 60 Game Season.
