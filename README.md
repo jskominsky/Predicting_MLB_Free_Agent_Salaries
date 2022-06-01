@@ -77,7 +77,7 @@ My final model was a Random Forest gridsearch.  This model is able to account fo
 
 ## For More Information
 
-Please review my full analysis available in my [Jupyter Notebook](PrimeTime_Main.ipynb) or [Presentation Deck](fakelink).
+Please review my Notebooks, [Data Cleaning](Data Cleaning.ipynb), [Modeling](Modeling.ipynb) or [Presentation Deck](MLB_FA_presentation.pdf).
 
 For additional questions, feel free to [contact me](mailto:jskominsky@gmail.com).
 
