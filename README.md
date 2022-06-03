@@ -99,10 +99,12 @@ For additional questions, feel free to [contact me](mailto:jskominsky@gmail.com)
 ## Repository Structure
 
 ```
-├── data                                <- Source data .csv files
-├── images                              <- Exported Notebook visualizations
-├── Workspace                           <- Additional scratch work notebooks
+├── Data                                <- Source data .csv files
+├── Images                              <- Exported Notebook visualizations and Notebook Images
+├── Workspace                           <- Additional scratch work notebooks, and CSV files for my app demo
 ├── Data_Cleaning.ipynb                 <- Data Cleaning and EDA in Jupyter Notebook
 ├── Modeling.ipynb                      <- Preprocessing and Modeling in Jupyter Notebook
 ├── MLB_FA_presentation.pdf             <- PDF version of project presentation
+├── app.py                              <- Code for Streamlit application
+├── environment.yml                     <- My environment for you to recreate my project
 └── README                              <- Top-level README for reviewers of this project
