@@ -52,8 +52,23 @@ I subsetted my data to only use data from 1984-2021.  I also subsetted my data t
 ## Methods
 ---
 
+I subsetted my data to only use the data from 1984-2021 and to only include players who played at least 6 seasons (so the only players included were ones who played long enough to make it to free agency). I then made a new dataframe where the columns of the dataframe were the players' hitting statistics for each of his first 6 seasons, and included the players' average salary of his 7th, 8th, 9th, and 10th seasons.
+
+I used Regression Models that were not affected by multicollinearity because most baseball statistics are correlated to each other.  I used Random Forest, XGBoost, and XGBoost Random Forest and I scored my models using R-squared and RMSE.  Using RMSE allowed me to see how far off my model’s salary predictions were in terms of dollars.
+
+
 ## Results
 ---
+
+My top 3 models scored pretty similarly.  My best model was one of my Random Forest gridsearch models.  This model had an R squared score of .68944, which means my model was able to account for nearly 69% of the variance within my data. My final model has an RMSE of just over 3,000,000, which means the error of our salary predictions is just over $3 million. This seems like a fair amount of error to expect when agents and general managers are negotiating a contract. However, I believe that once I am able to detrend the salary data, my model will have an even lower RMSE.
+
+
+![r2_bar_chart](https://user-images.githubusercontent.com/100230332/171959186-9ae5dbcc-379a-4fa1-bea7-2b56020994f2.jpg)
+
+![model_performance](https://user-images.githubusercontent.com/100230332/171959164-e333de6b-9857-4c12-a8ed-819adb93f267.jpg)
+
+
+
 
 ## Conclusion
 ---
